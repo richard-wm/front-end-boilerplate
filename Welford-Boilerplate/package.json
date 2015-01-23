@@ -1,0 +1,18 @@
+{
+  "name": "Welford-Boilerplate-Opencart",
+  "version": "1.0.0",
+  "description": "This is my package.json file for the opencart/html5 boilerplate",
+  "main": "index.php",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Shepherd",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-sass": "^0.8.1"
+  }
+}
