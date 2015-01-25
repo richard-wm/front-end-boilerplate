@@ -1,0 +1,91 @@
+//Title: Admin
+
+//Discription: Globally available admin file with settings for the boilerplates attributes
+
+/*-----------------------
+Base Line Grid
+------------------------*/
+//Grid on/off
+$on: true;
+$off: false;
+//grid
+$base-line-grid: $on;
+
+
+
+/*----------------------
+Default line height
+----------------------*/
+$default-line-height: 24;
+
+
+
+
+/*----------------------
+Breakpoints
+----------------------*/
+$bp-s: 30em;
+$bp-m: 40em;
+$bp-l: 50em;
+$bp-xl: 60em;
+$bp-xxl: 70em;
+
+
+
+/*----------------------
+Colour Pallet
+-----------------------*/
+$white:      #ffffff;
+$light-grey: #eeeeee;
+$grey:       #4e4e4e;
+$black:      #111111;
+$yellow:     #ffb81c;
+$blue:       #00a388;
+
+$body-colour: $grey;
+$color-keyline: $black;
+$primary-colour: $black;
+
+
+
+
+/*-------------------
+Font-family
+--------------------*/
+$primary-font-colour: 'calibri', arial;
+$secondary-font-colour: 'Dala Floda Web', serif;
+
+
+
+
+/*------------------
+Default font sizes
+-------------------*/
+$default-font-size: 16;
+
+//font-increase scale
+$font-size-scale: 1.414;
+
+$font-size-s:     $default-font-size / $font-size-scale;
+$font-size-m:     $default-font-size;
+$font-size-l:     $font-size-m * $font-size-scale;
+$font-size-xl:    $font-size-l * $font-size-scale;
+$font-size-xxl:   $font-size-xl * $font-size-scale;
+$font-size-xxxl:  $font-size-xxl * $font-size-scale;
+
+
+
+
+/*------------------
+Grid Columns
+-------------------*/
+$grid-columns: 12;
+
+
+
+/*--------------------
+Magic Number
+--------------------*/
+$magic-number: ($default-line-height / $default-font-size) + 0rem;
+
+

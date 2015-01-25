@@ -3,13 +3,17 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    	  sass: {
-		    dist: {
-		      files: {
-		        'css/main.css': 'scss/style.scss'
-		      }
-		    }
-		  }
+        // Compile Sass to CSS
+        sass: {
+            dist: {
+                options: {
+                    style: 'expanded'
+                },
+                files: {
+                    'css/main-style.css': 'scss/style.scss'
+                }
+            }
+        }
   });
 
   // Load the plugin that provides the "uglify" task.
