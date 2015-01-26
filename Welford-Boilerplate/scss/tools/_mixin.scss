@@ -1,0 +1,9 @@
+//Title: Mixin
+
+/*----------------------
+Font-Size
+----------------------*/
+@mixin font-size($font-size){
+	font-size: ($font-size / $default-font-size) + 0rem;
+	line-height: ceil($font-size / $default-font-size) * ($default-line-height / $font-size);
+}

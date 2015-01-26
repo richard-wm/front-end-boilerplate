@@ -1,0 +1,48 @@
+//Title: Default-Settings
+
+/*--------------------------
+Box-Sizing
+--------------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+
+
+/*------------------------
+HTML Defaults
+------------------------*/
+html {
+    box-sizing: border-box;
+    font-size: ($default-font-size / 16) * 100%;
+}
+
+
+
+
+/*----------------------
+Body Default Settings
+----------------------*/
+body {
+    margin: 0;
+    font-family: $primary-font-family;
+    font-style: normal;
+    font-stretch: normal;
+    color: $body-colour;
+    @include font-size($font-size-m);
+
+    @if $base-line-grid == $on {
+        background-image: url(http://basehold.it/i/#{$default-line-height}/ff0000);
+    }
+}
+
+
+
+/*---------------------
+Default image
+---------------------*/
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}

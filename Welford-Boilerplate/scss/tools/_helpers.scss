@@ -1,0 +1,71 @@
+//Title: Helpers
+
+/*----------------------
+Clearfix
+----------------------*/
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+
+
+
+/*--------------------
+Pull-paremeters
+--------------------*/
+.pull {
+	float:none;
+
+	&--right {
+		float: right;
+	}
+
+	&--left {
+		float: left;
+	}
+}
+
+
+
+/*-------------------
+Reset
+-------------------*/
+%reset {
+	margin:0; 
+	padding:0;
+}
+
+
+
+
+/*-------------------
+Text-align
+-------------------*/
+.text {
+	text-align: left;
+
+	&--center {
+		text-align: center;
+	}
+
+	&--right {
+		text-align: right;
+	}
+}
+
+
+
+
+/*--------------------
+Vertical Rythem
+--------------------*/
+%vertical-rythem {
+	margin: 0 0 $magic-number 0;
+	padding: 0;
+}

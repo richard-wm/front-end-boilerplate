@@ -13,6 +13,7 @@ $base-line-grid: $on;
 
 
 
+
 /*----------------------
 Default line height
 ----------------------*/
@@ -29,6 +30,7 @@ $bp-m: 40em;
 $bp-l: 50em;
 $bp-xl: 60em;
 $bp-xxl: 70em;
+
 
 
 
@@ -52,8 +54,8 @@ $primary-colour: $black;
 /*-------------------
 Font-family
 --------------------*/
-$primary-font-colour: 'calibri', arial;
-$secondary-font-colour: 'Dala Floda Web', serif;
+$primary-font-family: 'calibri', arial;
+$secondary-font-family: 'Dala Floda Web', serif;
 
 
 
@@ -80,6 +82,7 @@ $font-size-xxxl:  $font-size-xxl * $font-size-scale;
 Grid Columns
 -------------------*/
 $grid-columns: 12;
+
 
 
 

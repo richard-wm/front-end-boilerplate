@@ -22,5 +22,94 @@ Grid Columns
 /*--------------------
 Magic Number
 --------------------*/
+/*----------------------
+Font-Size
+----------------------*/
+/*----------------------
+Clearfix
+----------------------*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*--------------------
+Pull-paremeters
+--------------------*/
+.pull {
+  float: none;
+}
+.pull--right {
+  float: right;
+}
+.pull--left {
+  float: left;
+}
+
+/*-------------------
+Reset
+-------------------*/
+/*-------------------
+Text-align
+-------------------*/
+.text {
+  text-align: left;
+}
+.text--center {
+  text-align: center;
+}
+.text--right {
+  text-align: right;
+}
+
+/*--------------------
+Vertical Rythem
+--------------------*/
+p {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+/*--------------------------
+Box-Sizing
+--------------------------*/
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*------------------------
+HTML Defaults
+------------------------*/
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+/*----------------------
+Body Default Settings
+----------------------*/
+body {
+  margin: 0;
+  font-family: "calibri", arial;
+  font-style: normal;
+  font-stretch: normal;
+  color: #4e4e4e;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-image: url(http://basehold.it/i/24/ff0000);
+}
+
+/*---------------------
+Default image
+---------------------*/
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
 
 /*# sourceMappingURL=main-style.css.map */
