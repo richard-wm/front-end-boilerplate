@@ -1,6 +1,15 @@
-# Node.js
+# Bower
+components
+
+# Css
+css
+
+# Grunt
 node_modules
+
+# JavaScript
+js
 
 # Sass
 .sass-cache
-style.css.map
+sass

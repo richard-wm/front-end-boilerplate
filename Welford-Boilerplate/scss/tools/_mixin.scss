@@ -7,3 +7,61 @@ Font-Size
 	font-size: ($font-size / $default-font-size) + 0rem;
 	line-height: ceil($font-size / $default-font-size) * ($default-line-height / $font-size);
 }
+
+
+
+/*--------------------
+Breakpoints
+---------------------*/
+@mixin bp($point) {
+
+    @if $point == s {
+        @media (min-width: $bp-s) {
+            @content;
+        }
+    }
+
+    @if $point == m {
+        @media (min-width: $bp-m) {
+            @content;
+        }
+    }
+
+    @if $point == l {
+        @media (min-width: $bp-l) {
+            @content;
+        }
+    }
+
+    @if $point == xl {
+        @media (min-width: $bp-xl) {
+            @content;
+        }
+    }
+
+    @if $point == xxl {
+        @media (min-width: $bp-xxl) {
+            @content;
+        }
+    }
+}
+
+
+
+/*--------------------
+Vendorfix
+---------------------*/
+
+@mixin vendorfix($property, $value) {
+    -webkit-#{$property}: $value;
+    -moz-#{$property}: $value;
+    -ms-#{$property}: $value;
+    -o-#{$property}: $value;
+    #{$property}: $value;
+}
+
+
+
+
+
+$animate-scss-speed: 1s !default;

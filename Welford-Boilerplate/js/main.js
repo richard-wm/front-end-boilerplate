@@ -1,1 +1,1 @@
-
+$(".nav-toggle, ul.menu a").click(function(){$("body").toggleClass("menu-open")});
