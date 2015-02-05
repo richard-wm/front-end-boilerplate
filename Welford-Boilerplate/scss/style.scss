@@ -7,8 +7,6 @@
 @import "tools/mixin";
 @import "tools/helpers";
 
-
-
 //base file
 @import "base/default-settings";
 
@@ -16,6 +14,9 @@
 @import "components/nav-bar";
 @import "components/buttons";
 @import "components/wrapper";
+
+//plugins
+@import "plugins/flexslider";
 
 //objects file
 @import "objects/container";

@@ -10,17 +10,18 @@ module.exports = function(grunt) {
         concat: {
             dist: {
                 src: [
-                    'js/main.js'
+                    'js/main.js',
+                    'js/jquery.flexslider.js'
                 ],
-                dest: 'js/main.js',
+                dest: 'js/project/production.js',
             }
         },
 
         // Minify JavaScript files
         uglify: {
             build: {
-                src: 'js/main.js',
-                dest: 'js/main.js'
+                src: 'js/project/production.js',
+                dest: 'js/project/production.min.js'
             }
         },
 
