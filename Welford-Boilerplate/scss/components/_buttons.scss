@@ -1,0 +1,29 @@
+//title: Buttons
+
+//sections: 
+//Buttons
+
+
+/*------------------
+Buttons
+------------------*/
+.button {
+    height: $magic-number * 3;
+    padding: 0 1rem;
+    display: inline-block;
+    border: 2px solid $primary-colour;
+    font-size: ($font-size-m / $default-font-size) + 0rem;
+    font-weight: 300;
+    line-height: $magic-number * 3;
+    text-decoration: none;
+    color: $body-colour;
+
+    @include bp(l) {
+        padding: 0 2rem;
+        font-size: ($font-size-l / $default-font-size) + 0rem;
+    }
+
+    &:hover {
+        background: $primary-colour;
+    }
+}

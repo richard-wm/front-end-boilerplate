@@ -1,0 +1,24 @@
+//title: wrapper
+
+//Sections:
+//Wrapper
+
+/*----------------
+Wrapper
+-----------------*/
+.body-wrapper {
+    width: 100%;
+    top: 0;
+    right: 0;
+    position: relative;
+    @include vendorfix(transition, right .5s ease);
+    overflow: hidden;
+
+    .menu-open & {
+        right: 250px;
+
+        @include bp(l) {
+            right: auto;
+        }
+    }
+}

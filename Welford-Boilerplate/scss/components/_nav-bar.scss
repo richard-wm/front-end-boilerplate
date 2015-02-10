@@ -1,0 +1,113 @@
+//title:
+//Navbar
+
+//sections:
+//Nav bar Styling
+//nav Toggle
+//Site Logo/Navigation
+//Sliding Menu
+
+/*----------------
+Nav bar styling
+----------------*/
+.site-nav {
+    @extend .clearfix;
+    padding: $magic-number 0;
+    background: $white;
+}
+
+
+
+/*-----------------
+ Nav toggle
+-----------------*/
+.nav-toggle {
+    float: right;
+    color: $black;
+
+    @include bp(l) {
+        display: none;
+    }
+}
+
+
+/*------------------
+Site logo/navigation
+------------------*/
+//logo
+.site-header__logo {
+    margin: 0 0 $magic-number 0;
+    display: block;
+    float: left;
+
+    @include bp(l) {
+        margin: 0;
+    }
+}
+
+
+//navigation
+.site-nav__navbar {
+    padding: 0;
+
+    @include bp(l) {
+        padding: $magic-number 0;
+        float: right;
+    }
+}
+
+
+
+.site-nav__standard-menu {
+    display: none;
+
+    @include bp(l) {
+        display: block;
+    }
+}
+
+
+.site-nav ul {
+    @extend %reset;
+    list-style: none;
+}
+
+.site-nav li {
+    @include bp(l) {
+        margin-right: 1.5rem;
+        float: left;
+    }
+}
+
+
+/*----------------
+Sliding Menu
+----------------*/
+.site-nav__menu-header-nav-container {
+    display: block;
+    width: 250px;
+    height: 100%;
+    padding: 20px;
+    top: 0;
+    right: -250px;
+    z-index: 100;
+    position: fixed;
+    background: $white;
+    @include vendorfix(transition, right .5s ease);
+    @include vendorfix(box-shadow, inset 0px 0px 6px 0px rgba(0,0,0,0.2));
+
+    li {
+        margin-bottom: 25px;
+    }
+
+    .menu-open & {
+        right: 0;
+    }
+
+    @include bp(l) {
+        display:none;
+    }
+}
+
+
+
